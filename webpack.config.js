@@ -1,9 +1,4 @@
-/*eslint no-var: 0 */
-
 var webpack = require('webpack');
-//var path = require('path');
-
-//var SRC_PATH = [__dirname, 'src'];
 
 module.exports = {
   entry: ["babel-polyfill", './js/app.jsx'],
@@ -15,24 +10,18 @@ module.exports = {
     new webpack.NoErrorsPlugin()
   ],
   resolve: {
-    /*alias: {
-      constants: path.join(...SRC_PATH, 'constants')
-    },*/
     extensions: ["", ".jsx", ".js"],
   },
-  devtool: 'cheap-module-eval-source-map',
+  devtool: 'source-map',
   module: {
-    preLoaders: [
-      // { test: /\.jsx$|\.js$/, exclude: /node_modules/, loader: 'eslint-loader'}
-    ],
     loaders: [
       {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         loader: 'babel'
       },
-      { test: /\.styl$/, loader: 'style-loader!css-loader!stylus-loader' },
-      { test: /\.css$/, loader: 'style-loader!css-loader' }
+      { test: /\.css$/, loader: 'style-loader!css-loader' },
+      { test: /\.png$/, loader: "url-loader?mimetype=image/png" }
     ],
   }
 };

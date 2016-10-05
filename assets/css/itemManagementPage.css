@@ -1,0 +1,96 @@
+.list_view {
+    background-color: #fff;
+    padding: 30px;
+}
+
+#list_view_header {
+    margin-bottom: 1px;
+}
+
+/* table containing list of items */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-weight: bold;
+}
+
+td, th {
+    border-bottom: 2px solid #f3f4f5;
+    padding: 15px;
+}
+
+th {
+    color: #aaacae;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+td img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+    box-shadow: 0 5px 3px #eee;
+    padding: 7px;
+}
+
+td.edit,
+th.edit {
+    text-align: center;
+}
+
+tr:last-child td {
+    border: 0;
+}
+
+/* hide two columns when view is to narrow */
+@media only screen and (max-width: 620px) {
+    table tr td:nth-child(1) {
+        display: none;
+    }
+
+    table tr th:nth-child(1) {
+        display: none;
+    }
+    
+    .list_view {
+        padding: 15px;
+    }
+}
+
+/* Buttons edit and delete in the table */
+td.edit button {
+    margin: 0 5px;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+#edit-button {
+    background: url("../img/edit.png"), linear-gradient(to bottom, #1ba0e3, #0383c3);
+    background-size: 60%, 100%;
+    background-repeat: no-repeat, repeat-y;
+    background-position: center;
+}
+
+#delete-button {
+    background: url("../img/delete.png"), linear-gradient(to bottom, #1ba0e3, #0383c3);
+    background-size: 60%, 100%;
+    background-repeat: no-repeat, repeat-y;
+    background-position: center;
+}
+
+/* add button on top of table with items */
+#add-button {
+    float: right;
+    padding: 10px 15px;
+}
+
+#add-button img {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    vertical-align: middle;
+}

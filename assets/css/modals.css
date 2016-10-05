@@ -1,0 +1,71 @@
+.shadow_background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* body of the modal */
+.page_modal {
+    border-radius: 10px;
+    width: 386px;
+    overflow: hidden;
+    background: #fff;
+}
+
+.page_modal header {
+    display: block;
+    padding: 10px;
+    background: #eee;
+    color: #333;
+    text-align: center;
+}
+
+.page_modal header h1 {
+    margin: 0;
+}
+
+.page_modal section {
+    padding: 20px;
+}
+
+.page_modal p {
+    text-align: center;
+}
+
+.page_modal footer {
+    padding: 10px;
+    background: #eee;
+    text-align: center;
+}
+
+.page_modal footer button {
+    display: inline-block;
+    height: 30px;
+    padding: 0 10px;
+    margin: 0 10px;
+    line-height: 30px;
+}
+
+/* add/edit item form styles */
+label {
+    color: #aaacae;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    display: block;
+    margin: 10px 0;
+    box-sizing: border-box;
+}

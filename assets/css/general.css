@@ -1,0 +1,39 @@
+body {
+    font-family: "Helvetica Neue", "Lucida Grande", sans-serif;
+    background-color: #eceeef;
+    padding: 50px;
+}
+
+h1 {
+    margin: 15px 0 10px;
+    display: inline-block;
+    color: black;
+    font-size: 16px;
+}
+
+@media only screen and (max-width: 460px) {
+    body {
+        padding: 0;
+    }
+
+    h1 {
+        display: block;
+    }
+}
+
+button {
+    background-color: #1ba0e3;
+    background: linear-gradient(to bottom, #1ba0e3, #0383c3);
+    border: 1px solid #0072ac;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+    color: #fff;
+}
+
+.error-msg {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #986865;
+}
